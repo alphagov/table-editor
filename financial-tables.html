@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Financial Table Editor</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <script src="https://cdn.tinymce.com/4/tinymce.min.js"></script>
+  <script>tinymce.init({
+    selector: 'textarea',
+    content_css: ['base.css', 'generic-tables.css', 'financial-tables.css'],
+    plugins: 'table autoresize code contextmenu nonbreaking paste visualchars',
+    menubar: false,
+    toolbar: 'newdocument | table tablerowprops tablecellprops tablemergecells | alignnone alignright bold styleselect | nonbreaking visualchars | preparetable code',
+    table_toolbar: 'tablerowprops tablecellprops tablemergecells | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol', // below every table
+    contextmenu: 'tableprops cell row column', // appears on right click
+    autoresize_max_height: 600,
+    formats: {
+      alignright: { selector: 'td,th', classes: 'numeric' },
+    },
+    style_formats: [
+      { title: 'Total row', selector: 'tr', classes: 'total' },
+      { title: 'Subtotal row', selector: 'tr', classes: 'subtotal' },
+      { title: 'Section heading row', selector: 'tr', classes: 'section-heading' },
+      { title: 'Visually hidden text', inline: 'span', classes: 'visuallyhidden' },
+    ],
+    // only allow table elements, plus a few more useful inline elements
+    // -p = remove empty paragraphs, as there is always an annoying one at the end of the editor
+    // br = if added, TinyMCE adds br's all over the place (but they don't get through to the source code to be copied), causing issues with marking of empty header cells
+    // data-source:tinymce = in case we need to do something in slimmer
+    valid_elements: 'table[class:financial-data|id|data-source:tinymce],caption,col,colgroup[span],thead,tbody,tfoot,tr[class],td[scope|colspan|rowspan|class],th[scope|colspan|rowspan|class],strong,span[class],abbr[title],br,-p',
+    table_grid: false,
+    table_advtab: false,
+    table_cell_advtab: false,
+    table_row_advtab: false,
+  });</script>
+  <link rel="stylesheet" type="text/css" href="base.css" />
+</head>
+<body>
+  <noscript>Sorry, this editor only works with JavaScript.</noscript>
+
+  <textarea></textarea>
+</body>
+</html>

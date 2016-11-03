@@ -1,0 +1,60 @@
+
+/* how it appears in production - ish */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 60px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.31579;
+}
+
+table caption {
+  font-size: 1.16em;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  padding-left: 1em;
+  text-align: left;
+}
+
+table td,
+table th {
+  font-size: 14px;
+  line-height: 1.42857;
+  border-bottom: 1px solid #bfc1c3;
+  padding: 10px 20px 10px 5px;
+  text-align: left;
+  vertical-align: top;
+  font-weight: 400;
+}
+
+thead th {
+  font-weight: bold;
+}
+
+table .numeric {
+  text-align: right;
+  font-family: "ntatabularnumbers","nta",Arial,sans-serif;
+}
+
+
+/* making things look different to clarify various elements */
+
+table th {
+  position: relative;
+}
+table th::before {
+  content: '';
+  width: 3px;
+  height: 20px;
+  background-color: #28a197;
+  position: absolute;
+  left: 0;
+}
+
+span.visuallyhidden {
+  color: #999;
+  border: 1px dotted;
+}

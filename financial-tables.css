@@ -1,0 +1,30 @@
+
+thead,
+tfoot,
+table .total > * {
+  background-color: #dee0e2;
+}
+
+thead tr > *,
+table .total > *,
+table tbody .subtotal > *,
+table .section-heading > * {
+  font-weight: bold;
+}
+
+table .total > *,
+table .subtotal > * {
+  border-top: 3px solid #bfc1c3;
+}
+
+table tr.section-heading > * {
+  padding-top: 30px;
+}
+
+table tbody:last-of-type tr:last-child > *,
+table tfoot ~ tbody:last-of-type tr:last-child > * {
+  padding-bottom: 30px;
+}
+table tbody:last-child tr:last-child > * {
+  padding-bottom: 10px;
+}
