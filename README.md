@@ -5,22 +5,22 @@ WYSIWYG HTML editor for complex tables, when Markdown just doesn't cut it.
 
 ## Screenshots
 
-TODO
+![](https://raw.githubusercontent.com/alphagov/table-editor/master/screenshot.png)
 
 
 ## Live examples
 
-- [alphagov.github.io/table-editor](https://alphagov.github.io/table-editor)
+- [alphagov.github.io/table-editor](https://alphagov.github.io/table-editor/)
 
 
 ## Nomenclature
 
-- **Complex table**: when a table needs header cells not just in the header, merged cells and various classes
+- **Complex table**: when a table needs header cells anywhere, merged cells and various classes
 
 
 ## Technical documentation
 
-TODO
+This is a pure static JavaScript application and can be run in any modern browser. It needs an internet connection for accessing TinyMCE's CDN at least when first loading the page.
 
 
 ### Dependencies
