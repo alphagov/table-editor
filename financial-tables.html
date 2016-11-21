@@ -26,8 +26,8 @@
     // only allow table elements, plus a few more useful inline elements
     // -p = remove empty paragraphs, as there is always an annoying one at the end of the editor
     // br = if added, TinyMCE adds br's all over the place (but they don't get through to the source code to be copied), causing issues with marking of empty header cells
-    // data-source:tinymce = in case we need to do something in slimmer
-    valid_elements: 'table[class:financial-data|id|data-source:tinymce],caption,col,colgroup[span],thead,tbody,tfoot,tr[class],td[scope|colspan|rowspan|class],th[scope|colspan|rowspan|class],strong,span[class],abbr[title],br,-p',
+    // class: source-tableeditor = in case we need to do something in slimmer
+    valid_elements: 'table[class:financial-data source-tableeditor|id],caption,col,colgroup[span],thead,tbody,tfoot,tr[class],td[scope|colspan|rowspan|class],th[scope|colspan|rowspan|class],strong,span[class],abbr[title],br,-p',
     table_grid: false,
     table_advtab: false,
     table_cell_advtab: false,
