@@ -25,7 +25,7 @@ table th {
   font-weight: 400;
   /* the following needs to be repeated to be more specific than TinyMCE's own content styling */
   font-size: 14px;
-  font-family: "nta",Arial,sans-serif;
+  font-family: Arial,sans-serif;
 }
 
 thead th {
@@ -34,7 +34,7 @@ thead th {
 
 table .numeric {
   text-align: right;
-  font-family: "ntatabularnumbers","nta",Arial,sans-serif;
+  font-variant-numeric: tabular-nums;
 }
 
 

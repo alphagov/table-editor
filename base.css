@@ -1,10 +1,8 @@
-/* not ideal to use @import but the font is not vital */
-@import "https://assets.publishing.service.gov.uk/static/fonts-5ff8c53913434afd0072a480d7cfca67cace4c8d03f6ef96b78a4455728ce745.css" all;
 
 body {
   background: #fff;
   color: #0b0c0c;
   padding: 10px;
-  font-family: "nta",Arial,sans-serif;
+  font-family: Arial,sans-serif;
   font-size: 14px;
 }
